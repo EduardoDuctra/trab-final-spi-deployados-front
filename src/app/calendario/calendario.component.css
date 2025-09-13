@@ -1,0 +1,85 @@
+/* Cabeçalho das colunas (dias da semana) */
+:host ::ng-deep .fc-col-header-cell {
+  background-color: #f1f1f1;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px 0;
+  border-bottom: 2px solid #ccc;
+}
+
+/* Eventos */
+:host ::ng-deep .fc-event {
+  background-color: #1976d2;
+  color: #fff;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 0.85rem;
+  border: none;
+}
+
+/* Evento em hover */
+:host ::ng-deep .fc-event:hover {
+  background-color: #1565c0;
+  cursor: pointer;
+}
+
+/* Espaço "All Day" */
+:host ::ng-deep .fc-day-grid {
+  background-color: #fafafa;
+}
+
+/* Botões do header */
+:host ::ng-deep .fc-toolbar {
+  background-color: #eeeeee;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+:host ::ng-deep .fc-button {
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 0.85rem;
+  margin-right: 5px;
+}
+
+:host ::ng-deep .fc-button:hover {
+  background-color: #1565c0;
+}
+
+/* ---------------FUNCIONA------------------- */
+
+/* Título do calendário */
+:host ::ng-deep .fc-toolbar h2 {
+  font-family: "Rawline" !important;
+  font-weight: 400 !important;
+  font-size: 30px;
+  color: var(--black);
+}
+
+body {
+  font-family: "Rawline" !important;
+  font-weight: 200 !important;
+}
+.calendario-wrapper {
+  padding: 20px 80px 0 80px; /* top right bottom left */
+}
+
+/* =======================
+   FullCalendar TimeGrid
+======================= */
+
+/* Cada linha de horário */
+:host ::ng-deep .fc-time-grid .fc-slats td {
+  height: 40px; /* altura de cada linha */
+}
+
+:host ::ng-deep .fc .fc-col-header .fc-scrollgrid-sync-inner {
+  background-color: #c90404 !important;
+  font-weight: bold;
+  text-align: center;
+  padding: 200px !important;
+}

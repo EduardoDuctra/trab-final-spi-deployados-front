@@ -4,20 +4,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
-import {RouterModule} from "@angular/router";
-import {AuthModule} from "./auth/auth.module";
+import { RouterModule } from '@angular/router';
+import { AuthModule } from './auth/auth.module';
 import { NavbarComponent } from './layout/navbar/navbar.component';
-import {LayoutModule} from "@angular/cdk/layout";
-import {MatMenuModule} from "@angular/material/menu";
-import {MatIconModule} from "@angular/material/icon";
-import {MatToolbarModule} from "@angular/material/toolbar";
-import {MatTooltipModule} from "@angular/material/tooltip";
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { CalendarioComponent } from './calendario/calendario.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FullCalendarModule } from 'primeng/fullcalendar';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavbarComponent
-  ],
+  declarations: [AppComponent, NavbarComponent, CalendarioComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -29,8 +30,11 @@ import {MatTooltipModule} from "@angular/material/tooltip";
     MatIconModule,
     MatToolbarModule,
     MatTooltipModule,
+    HttpClientModule,
+    FullCalendarModule,
+    SharedModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

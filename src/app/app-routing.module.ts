@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {RouterModule, Routes} from "@angular/router";
-import {LoginComponent} from "./auth/login/login.component";
+import { RouterModule, Routes } from '@angular/router';
+import { LoginComponent } from './auth/login/login.component';
+import { CalendarioComponent } from './calendario/calendario.component';
 
 // Aqui definimos nossas rotas
 const routes: Routes = [
@@ -9,21 +10,18 @@ const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
 
   // Se o usuário acessar a URL '/login', mostre o LoginComponent
-  { path: 'login', component: LoginComponent }
+  { path: 'login', component: LoginComponent },
 
   // No futuro, você adicionará mais rotas aqui. Ex:
   // { path: 'dashboard', component: DashboardComponent },
-];
 
+  //rota calendário
+  { path: 'calendario', component: CalendarioComponent },
+];
 
 @NgModule({
   declarations: [],
-  imports: [
-    CommonModule,
-    RouterModule.forRoot(routes)
-  ],
-  exports: [
-    RouterModule
-  ]
+  imports: [CommonModule, RouterModule.forRoot(routes)],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
