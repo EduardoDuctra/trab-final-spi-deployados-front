@@ -41,6 +41,7 @@ export class CalendarioComponent implements OnInit {
         start: item.data_inicio,
         end: item.data_fim,
         description: `Status: ${item.status}`,
+        className: 'evento-azul',
       }));
     });
   }

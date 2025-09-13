@@ -1,55 +1,3 @@
-/* Cabeçalho das colunas (dias da semana) */
-:host ::ng-deep .fc-col-header-cell {
-  background-color: #f1f1f1;
-  font-weight: bold;
-  text-align: center;
-  padding: 5px 0;
-  border-bottom: 2px solid #ccc;
-}
-
-/* Eventos */
-:host ::ng-deep .fc-event {
-  background-color: #1976d2;
-  color: #fff;
-  border-radius: 4px;
-  padding: 2px 4px;
-  font-size: 0.85rem;
-  border: none;
-}
-
-/* Evento em hover */
-:host ::ng-deep .fc-event:hover {
-  background-color: #1565c0;
-  cursor: pointer;
-}
-
-/* Espaço "All Day" */
-:host ::ng-deep .fc-day-grid {
-  background-color: #fafafa;
-}
-
-/* Botões do header */
-:host ::ng-deep .fc-toolbar {
-  background-color: #eeeeee;
-  padding: 5px 10px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-:host ::ng-deep .fc-button {
-  background-color: #1976d2;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 5px 10px;
-  font-size: 0.85rem;
-  margin-right: 5px;
-}
-
-:host ::ng-deep .fc-button:hover {
-  background-color: #1565c0;
-}
-
 /* ---------------FUNCIONA------------------- */
 
 /* Título do calendário */
@@ -78,8 +26,42 @@ body {
 }
 
 :host ::ng-deep .fc .fc-col-header .fc-scrollgrid-sync-inner {
-  background-color: #c90404 !important;
   font-weight: bold;
   text-align: center;
-  padding: 200px !important;
+}
+
+/* Botões do header */
+:host ::ng-deep .fc-toolbar {
+  margin-bottom: 10px;
+}
+
+/* Eventos */
+:host ::ng-deep .fc-event.evento-azul {
+  background-color: var(--primary-color-light) !important;
+  color: var(--white) !important;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 0.85rem;
+  border: none !important;
+}
+
+/* Evento em hover */
+:host ::ng-deep .fc-event.evento-azul:hover {
+  background-color: var(--primary-color) !important;
+  cursor: pointer;
+}
+
+/* Botões da toolbar (prev, next, today) */
+:host ::ng-deep .fc-toolbar .fc-button {
+  background-color: var(--background-color-white) !important; /* cor de fundo */
+  color: var(--primary-color) !important; /* cor do texto */
+  border: none !important; /* remove borda */
+}
+
+/* Hover dos botões */
+:host ::ng-deep .fc-toolbar .fc-button:hover {
+  background-color: var(
+    --primary-color-light
+  ) !important; /* cor ao passar o mouse */
+  cursor: pointer !important;
 }
